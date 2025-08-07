@@ -1,0 +1,31 @@
+/* AdminSettings.css */
+
+.admin-settings {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.admin-settings h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.admin-settings p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.role-tag {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #1e3a8a;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}

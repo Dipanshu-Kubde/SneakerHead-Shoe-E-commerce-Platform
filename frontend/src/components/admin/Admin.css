@@ -1,0 +1,12 @@
+/* src/styles/admin.css */
+
+.admin-layout {
+  padding-left: 20rem; /* Adjusts layout to leave space for fixed sidebar */
+}
+
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
