@@ -1,0 +1,83 @@
+.admin-dashboard {
+  padding: 24px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dashboard-section {
+  margin-top: 32px;
+}
+
+.dashboard-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chart-placeholder {
+  height: 150px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.activity-feed {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #374151;
+}
+
+.activity-feed li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}

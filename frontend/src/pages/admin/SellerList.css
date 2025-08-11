@@ -1,0 +1,63 @@
+/* SellerList.css */
+
+.seller-list {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.seller-list h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.seller-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.seller-table th,
+.seller-table td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.seller-table thead {
+  background: #f9fafb;
+}
+
+.seller-table tr:hover {
+  background: #fafafa;
+}
+
+.btn-action {
+  margin-right: 8px;
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #059669;
+}
+
+.btn-suspend {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-suspend:hover {
+  background-color: #b91c1c;
+}

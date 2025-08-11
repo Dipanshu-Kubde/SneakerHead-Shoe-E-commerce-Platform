@@ -1,0 +1,45 @@
+.nike-sidebar {
+  width: 260px;
+  padding-right: 16px;
+  border-right: 1px solid #ddd;
+}
+.filter-group {
+  margin-bottom: 24px;
+}
+.filter-group h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.btn-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.toggle-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background: black;
+  color: white;
+  border-color: black;
+}
+.color-swatches {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.swatch.selected {
+  border-color: #111;
+}

@@ -1,0 +1,43 @@
+# === FRONTEND (React/Vite) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# === BACKEND (Spring Boot) ===
+<<<<<<< HEAD
+backend/target/
+backend/.idea/
+backend/.vscode/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-dev.properties
+backend/src/main/resources/application-prod.properties
+=======
+backend/MiniMart-MP/target/
+backend/MiniMart-MP/.idea/
+backend/MiniMart-MP/.vscode/
+backend/MiniMart-MP/.classpath
+backend/MiniMart-MP/.project
+backend/MiniMart-MP/.settings/
+backend/MiniMart-MP/src/main/resources/application-local.properties
+backend/MiniMart-MP/src/main/resources/application-dev.properties
+backend/MiniMart-MP/src/main/resources/application-prod.properties
+
+backend/OrderService/target/
+backend/OrderService/.idea/
+backend/OrderService/.vscode/
+backend/OrderService/.classpath
+backend/OrderService/.project
+backend/OrderService/.settings/
+backend/OrderService/src/main/resources/application-local.properties
+backend/OrderService/src/main/resources/application-dev.properties
+backend/OrderService/src/main/resources/application-prod.properties
+>>>>>>> 84d876b (Initial commit: added backend microservices and frontend)
+
+# === SYSTEM FILES ===
+*.log
+.DS_Store
+Thumbs.db

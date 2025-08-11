@@ -1,0 +1,356 @@
+/* shop.css */
+.shop-wrapper {
+  display: flex;
+  padding: 24px;
+  gap: 32px;
+  font-family: "San Francisco", "Segoe UI", sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+}
+.filter-group {
+  margin-bottom: 24px;
+}
+.filter-group h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.filter-group ul {
+  list-style: none;
+  padding: 0;
+}
+.filter-group li {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #444;
+  cursor: pointer;
+}
+.filter-group li:hover {
+  color: #000;
+  font-weight: 500;
+}
+
+.products-area {
+  flex: 1;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.sort-wrapper select {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.feedback {
+  color: green;
+  margin-bottom: 12px;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  animation: fadeIn 0.3s ease-out, fadeOut 0.3s ease-in 1.7s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Filter button styles */
+.filter-toggle-top {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+/* Flex row for controls */
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Floating filter dropdown (absolute inside .products-area) */
+.floating-filter-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.floating-filter-content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+}
+
+/* Controls row */
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Filter toggle button */
+.filter-toggle-top {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Floating overlay panel */
+.floating-filter-panel {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.floating-filter-content {
+  background: #fff;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Inline sections */
+.filter-section.inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.filter-section.inline button.size-btn {
+  border: 1px solid #888;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-section.inline button.size-btn.sel {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Full sections */
+.filter-section {
+  margin-bottom: 16px;
+}
+
+.filter-section strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Sidebar toggle without shifting controls */
+.filter-toggle-top {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Layout flex adjustments */
+.shop-wrapper {
+  display: flex;
+}
+.products-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.controls {
+  width: 100%;
+}
+
+/* Ensure controls-row stays unchanged */
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Floating overlay panel kept as before */
+.floating-filter-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.floating-filter-content {
+  /* existing styles remain */
+}
+
+
+.shop-container {
+  padding: 24px;
+  font-family: "San Francisco", "Segoe UI", sans-serif;
+}
+.shop-header-sticky {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 20;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.header-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.filter-btn {
+  background: none;
+  border: 1px solid #111;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sort-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.shop-layout {
+  display: flex;
+  margin-top: 24px;
+  gap: 32px;
+}
+.shop-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+}
+.products-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .shop-layout {
+    flex-direction: column;
+  }
+
+  .shop-sidebar {
+    width: 100%;
+    order: 1;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.shop-header-sticky {
+  position: sticky;
+  top: 40px; /* push below navbar */
+  background: #fff;
+  z-index: 99;
+}
+
+
+.shop-layout {
+  border: 1px solid rgb(255, 255, 255);
+  align-items: flex-start;
+}
+.shop-sidebar {
+  border: 1px solid rgb(255, 255, 255);
+}
+.products-grid {
+  border: 1px solid rgb(255, 255, 255);
+}

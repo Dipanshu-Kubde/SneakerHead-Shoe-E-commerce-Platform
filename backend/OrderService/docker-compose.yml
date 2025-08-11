@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  order-service:
+    build: .
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql
+    environment:
+		SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3307/order_db?useSSL=false&serverTimezone=UTC
+		SPRING_DATASOURCE_USERNAME: orderuser
+		SPRING_DATASOURCE_PASSWORD: orderpass
+		SPRING_JPA_HIBERNATE_DDL_AUTO: update
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: asdf5678
+      MYSQL_DATABASE: order_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

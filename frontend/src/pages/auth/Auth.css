@@ -1,0 +1,121 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+  font-family: "San Francisco", "Segoe UI", sans-serif;
+}
+
+.auth-box {
+  background: #fff;
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.auth-btn {
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.auth-divider {
+  text-align: center;
+  margin: 18px 0;
+  color: #999;
+  position: relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  width: 40%;
+  top: 50%;
+}
+.auth-divider::before {
+  left: 0;
+}
+.auth-divider::after {
+  right: 0;
+}
+
+.auth-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alt-btn {
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: #fff;
+}
+
+.google {
+  border-color: #ddd;
+}
+.apple {
+  background: black;
+  color: white;
+}
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.auth-btn.green {
+  background: #0f9d58;
+}
+
+.auth-btn.green:hover {
+  background: #0a7e44;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
