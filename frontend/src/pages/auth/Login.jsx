@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
 import { useAuth } from "../../context/AuthContext";
-import "./auth.css";
+import "./Auth.css";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
