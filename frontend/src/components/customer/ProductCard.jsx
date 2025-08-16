@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import "./productcard.css";
+import "./ProductCard.css";
 
 const ProductCard = ({ product, onAddToCart }) => {
   const [message, setMessage] = useState("");
