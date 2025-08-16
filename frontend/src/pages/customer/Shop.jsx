@@ -4,7 +4,7 @@ import useProducts from "../../hooks/useProducts";
 import { addToCart } from "../../api/cartApi";
 import axios from "axios";
 import FilterSidebar from "../../components/customer/FilterSidebar";
-import "./shop.css";
+import "./Shop.css";
 
 const productMatchesFilters = (product, filters) => {
   for (const [key, values] of Object.entries(filters)) {
