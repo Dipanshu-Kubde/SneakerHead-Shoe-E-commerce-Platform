@@ -1,6 +1,6 @@
 import React from "react";
 import { MdInventory, MdAttachMoney, MdGroup, MdShoppingCart } from "react-icons/md";
-import "./Admindashboard.css";
+import "./AdminDashboard.css";
 
 const AdminDashboard = () => {
   return (
