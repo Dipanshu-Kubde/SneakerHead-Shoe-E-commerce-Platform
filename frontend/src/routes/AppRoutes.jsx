@@ -12,7 +12,7 @@ import AdminProductForm from "../pages/admin/AdminProductForm";
 import OrderList from "../pages/admin/OrderList";
 import SellerList from "../pages/admin/SellerList";
 import AdminSettings from "../pages/admin/AdminSettings";
-import Shop from "../pages/Customer/Shop";
+import Shop from "../pages/customer/Shop";
 import HomePage from "../pages/HomePage";
 import VerifyOtp from "../pages/auth/VerifyOtp";
 import Profile from "../pages/user/Profile";
