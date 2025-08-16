@@ -1,7 +1,7 @@
 // src/components/admin/AdminLayout.jsx
 import React from "react";
 import AdminSidebar from "./AdminSidebar";
-import "./admin.css";
+import "./Admin.css";
 
 const AdminLayout = ({ children }) => {
   return (
